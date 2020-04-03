@@ -3,7 +3,7 @@ using System.Collections;
 public class ShotZone : MonoBehaviour
 {
     public Shot targetShot;
-    void OnTriggerEnter(Collider c)
+    void OnTriggerStay(Collider c)
     {
         if (c.CompareTag("Player"))
         {
